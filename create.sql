@@ -6,7 +6,7 @@ create table publisher(
           
 create table books(
         id serial PRIMARY KEY,
-        title  UNIQUE text,
+        title   text,
         publisher serial REFERENCES publisher(id)
         );
         
